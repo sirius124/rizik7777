@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+	max-width: 1076px;
+	height: 2000px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+.burger-btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: aqua;
+}
+
+.burger-btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  left: 5px;
+}
+
+.burger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.header-line {
+	display: flex;
+	margin-top: 10px;
+}
+
+.phone-math {
+	margin-left: 64px;
+	margin-right: 46px;
+}
+
+.logo-math {
+	margin-left: 41px;
+}
+
+.search-line {
+	display: flex;
+}
+
+.search-txt {
+	font-family: Comfortaa;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+#search-container {
+  display: flex;
+  margin-top: 12.93px;
+  margin-left: 182px;
+}
+#search-container input {
+  background-color: transparent;
+  width: 60%;
+  border: 1px solid #FFD700;
+  padding: 1em 0.3em;
+  height: 44px;
+}
+
+#search-container button {
+  color: #ffffff;
+}
+
+.basket {
+	margin-right: 100px;
+	margin-top: 14px;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu li{
+  width: 215px;
+  list-style: none;
+  background: #FFD700;
+  position: relative;
+}
+
+.menu a {
+	color: #667C87;
+  font-family: Comfortaa;
+  font-weight: 700;
+	font-size: 14px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  transition: all .5s;
+}
+
+.menu ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu ul {
+  display: none;
+  top: 0;
+  left: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.container-category {
+		width: 780px;
+		float: left;
+		
+}
+
+
+
+.text {
+	margin-left: 196px;
+	margin-top: 5px;
+
+}
+
+
+.wrapper-cotegory {
+	width: 692px;
+	display: flex;
+
+}
+
+.cotegory-img {
+
+}
+
+.cotegory-img img {
+	width: 324px;
+	height: 243px;
+	display: inline;
+	margin-right: 70px;
+	margin-top: 13px;
+	
+}
+
+.cotegory-img h1 {
+	color: #667C87;
+  font-family: Comfortaa;
+  font-weight: 700;
+	font-size: 15px;
+	margin-left: 5px;
+	margin-top: 4px;
+}
+
+.cotegory-img a {
+	text-decoration: none;
+}
+
+.text-tovar {
+	margin-top: 8px;
+	margin-left: 232.50px;
+}
+
+.container-info {
+	width: 281px;
+	float: right;
+	
+}
+
+.heading {
+	font-family: Comfortaa;
+  font-weight: 700;
+  color: #667C87;
+	font-size: 18px;
+	margin-top: 3px;
+	text-align: center;
+}
+
+
+.heading-2 {
+	font-family: Comfortaa;
+	color: #667C87;
+  font-weight: 700;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+.text-2 {
+	color: #667C87;
+  font-family: Comfortaa;
+  font-weight: 400;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+.heading-3 {
+	font-family: Comfortaa;
+	color: #667C87;
+  font-weight: 700;
+	font-size: 18px;
+	margin-top: 40px;
+}
+
+
+
+
+.card {
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
+.card__top {
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+}
+
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__prices {
+  display: flex;
+}
+
+.card__price::after {
+  content: "\20B8";
+  margin-left: 4px;
+  position: relative;
+}
+
+.card__price--discount {
+  font-weight: 700;
+  font-size: 19px;
+  font-family: Comfortaa;
+  color: #414141;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #414141;
+  font-family: Comfortaa;
+  font-weight: 400;
+}
+
+.card__title:hover {
+  color: #667C87;
+}
+
+.card__add {
+  display: block;
+  width:190px ;
+  font-weight: 400;
+  font-size: 17px;
+  color: #ffff;
+  padding: 10px;
+  text-align: center;
+  background-color: #FFD700 ;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+
+
+.container-card {
+  width: 780px;
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.product__quantity {
+  margin-bottom: 3px;
+}
+.abut{
+	width: 700px;
+}
+
+.abut-txt{
+	margin: 15px 0 10px ;
+	
+	font-family: Comfortaa;
+  font-weight: 700;
+  color: #414141;
+}
+
+#easynetshop-cart-count {
+  margin-left: 963px;
+  margin-top: 15px;
+  position: absolute;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-weight: 400;
+  color: #414141;
+}
+
+.easynetshop-modal-body {
+  font-family: Comfortaa;
+  font-weight: 400;
+  color: #414141;
+}
+
+.easynetshop-modal-title{
+  font-family: Comfortaa;
+  font-weight: 700;
+  color: #414141;
+}
+
+
+.easynetshop-gotocart {
+  background-color: #FFD700;
+  color: #414141;
+  font-family: Comfortaa;
+}
+
+
+.zakaz-img {
+  margin-left: 250px;
+  margin-top: 5px;
+}
+
+.zakaz-img2 {
+  width: 726px;
+  height: 245px;
+  margin-left: 35px;
+}
+
+.net-img {
+  margin-left: 195px;
+}
+
+.net-txt {
+  width: 700px;
+  font-family: Comfortaa;
+  font-weight: 700;
+  color: #414141;
+  margin-top: 6px;
+}
+
+.footer {
+  margin-left: 230px;
+}
+
+.footer a {
+  font-family: Comfortaa;
+  font-weight: 400;
+  color: #414141;
+  text-decoration: none;
+}
+
+.copy {
+  margin-left: 65px;
+  font-family: Comfortaa;
+  font-weight: 400;
+  color: #414141;
+  margin-top: 3px;
+}
+

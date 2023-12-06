@@ -1,0 +1,32 @@
+@media only screen and (max-width: 700px) {
+.container {
+	max-width: 700px;
+	height: 2000px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+.phone-math {
+	display: none;
+}
+
+.loca-math {
+	display: none;
+}
+
+.wrapper {
+	display: none;
+}
+
+.logo-math {
+	display: none;
+}
+
+.container-info {
+	display: none;
+}
+
+.burger-btn {
+	display: block;
+}
+}
